@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="age-calc">
+      <div class="input-fields">
+        <div class="day-input">
+          <label class="day-label">DAY</label>
+          <input type="text" placeholder="DD" class="day-val" />
+          <span class="error-text error-day"></span>
+        </div>
+        <div class="month-input">
+          <label class="month-label">MONTH</label>
+          <input type="text" placeholder="MM" class="month-val" />
+          <span class="error-text error-month"></span>
+        </div>
+        <div class="year-input">
+          <label class="year-label">YEAR</label>
+          <input type="text" placeholder="YYYY" class="year-val" />
+          <span class="error-text error-year"></span>
+        </div>
+        <div></div>
+      </div>
+      <div class="arrow-container">
+        <button class="arrow">
+          <img
+            src="./assets/images/icon-arrow.svg"
+            alt="arrow image"
+            class="arrow-img"
+          />
+        </button>
+      </div>
+
+      <div class="display-age">
+        <div class="years-text"><span class="years">- - </span>years</div>
+        <div class="months-text"><span class="months">- - </span>months</div>
+        <div class="days-text"><span class="days">- - </span>days</div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Valon Kraja</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
